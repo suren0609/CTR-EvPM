@@ -1,0 +1,104 @@
+@import "../../colorVars.scss";
+
+.Chart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 40px;
+  margin-top: 50px;
+  position: relative;
+
+  .graphBody {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px;
+
+    .select {
+      width: 150px;
+      // height: 40px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      border-radius: 5px;
+      color: var(--textColor);
+      background: var(--chartBG);
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      position: relative;
+
+      .selected {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        user-select: none;
+      }
+
+      .options {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--chartBG);
+        border-radius: 5px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.249);
+
+        button {
+          background: transparent;
+          width: 100%;
+          padding: 5px;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          color: var(--textColor);
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          cursor: pointer;
+          transition: all 0.1s ease-in-out;
+
+          &:hover {
+            background: var(--base_color);
+            color: var(--chartBG);
+          }
+        }
+      }
+    }
+
+    canvas {
+      width: 100% !important;
+      margin-top: 10px;
+      background: var(--chartBG);
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.127);
+      padding: 10px;
+    }
+  }
+}
+
+.loadingWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.351);
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  * {
+    transition: unset;
+  }
+}

@@ -1,0 +1,116 @@
+// $themes: (
+// light: (
+//   base_color: #af3dff;
+//   base_color_shadow: #ae3dffae;
+//   headerBG: #000000;
+//   chartBG: #232323;
+//   textColor: #d6d6d6;
+// ),
+// dark: (
+//   base_color: #af3dff;
+//   base_color_shadow: #ae3dffae;
+//   headerBG: #000000;
+//   chartBG: #d6d6d6;
+//   textColor: #232323;
+// ),
+// );
+
+// --base_color: #af3dff;
+//   --base_color_shadow: #ae3dffae;
+//   --headerBG: #000000;
+//   --chartBG: #232323;
+//   --textColor: #d6d6d6;
+//   --logo-color: #dda9ff;
+
+// --base_color: #6500ad;
+//   --base_color_shadow: #5e00a1ae;
+//   --headerBG: #e9e9e9;
+//   --chartBG: #e6e3e3;
+//   --textColor: #232323;
+//   --logo-color: #bf60ff;
+
+html[data-theme="dark"] {
+  --base_color: #0ef;
+  --base_color_shadow: rgba(0, 238, 255, 0.713);
+  --headerBG: #323946;
+  --chartBG: #1f242d;
+  --textColor: #fff;
+  --logo-color: #dda9ff;
+  --app_bg: linear-gradient(
+      200deg,
+      rgba(171, 171, 171, 0.05) 0%,
+      rgba(171, 171, 171, 0.05) 23%,
+      rgba(90, 90, 90, 0.05) 23%,
+      rgba(90, 90, 90, 0.05) 48%,
+      rgba(65, 65, 65, 0.05) 48%,
+      rgba(65, 65, 65, 0.05) 61%,
+      rgba(232, 232, 232, 0.05) 61%,
+      rgba(232, 232, 232, 0.05) 100%
+    ),
+    linear-gradient(
+      126deg,
+      rgba(194, 194, 194, 0.05) 0%,
+      rgba(194, 194, 194, 0.05) 11%,
+      rgba(127, 127, 127, 0.05) 11%,
+      rgba(127, 127, 127, 0.05) 33%,
+      rgba(117, 117, 117, 0.05) 33%,
+      rgba(117, 117, 117, 0.05) 99%,
+      rgba(248, 248, 248, 0.05) 99%,
+      rgba(248, 248, 248, 0.05) 100%
+    ),
+    linear-gradient(
+      144deg,
+      rgba(64, 64, 64, 0.05) 0%,
+      rgba(64, 64, 64, 0.05) 33%,
+      rgba(211, 211, 211, 0.05) 33%,
+      rgba(211, 211, 211, 0.05) 50%,
+      rgba(53, 53, 53, 0.05) 50%,
+      rgba(53, 53, 53, 0.05) 75%,
+      rgba(144, 144, 144, 0.05) 75%,
+      rgba(144, 144, 144, 0.05) 100%
+    ),
+    linear-gradient(329deg, hsl(148, 0%, 0%), hsl(148, 0%, 0%));
+}
+
+html[data-theme="light"] {
+  --base_color: rgb(0, 174, 186);
+  --base_color_shadow: rgba(0, 179, 192, 0.713);
+  --headerBG: #e9e9e9;
+  --chartBG: #e6e3e3;
+  --textColor: #232323;
+  --logo-color: #bf60ff;
+  --app_bg: linear-gradient(
+      200deg,
+      rgba(171, 171, 171, 0.05) 0%,
+      rgba(171, 171, 171, 0.05) 23%,
+      rgba(90, 90, 90, 0.05) 23%,
+      rgba(90, 90, 90, 0.05) 48%,
+      rgba(65, 65, 65, 0.05) 48%,
+      rgba(65, 65, 65, 0.05) 61%,
+      rgba(232, 232, 232, 0.05) 61%,
+      rgba(232, 232, 232, 0.05) 100%
+    ),
+    linear-gradient(
+      126deg,
+      rgba(194, 194, 194, 0.05) 0%,
+      rgba(194, 194, 194, 0.05) 11%,
+      rgba(127, 127, 127, 0.05) 11%,
+      rgba(127, 127, 127, 0.05) 33%,
+      rgba(117, 117, 117, 0.05) 33%,
+      rgba(117, 117, 117, 0.05) 99%,
+      rgba(248, 248, 248, 0.05) 99%,
+      rgba(248, 248, 248, 0.05) 100%
+    ),
+    linear-gradient(
+      144deg,
+      rgba(64, 64, 64, 0.05) 0%,
+      rgba(64, 64, 64, 0.05) 33%,
+      rgba(211, 211, 211, 0.05) 33%,
+      rgba(211, 211, 211, 0.05) 50%,
+      rgba(53, 53, 53, 0.05) 50%,
+      rgba(53, 53, 53, 0.05) 75%,
+      rgba(144, 144, 144, 0.05) 75%,
+      rgba(144, 144, 144, 0.05) 100%
+    ),
+    linear-gradient(329deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
